@@ -164,6 +164,7 @@ func (r *Rewriter) ExistingImports(filename string) []Import {
 			}
 			imps = append(imps, Import{name, path})
 		}
+		fmt.Printf("f.Imports: %+v, imps: %+v", f.Imports, imps)
 		return imps
 	}
 	return nil
